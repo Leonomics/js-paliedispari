@@ -52,13 +52,18 @@ function checkPariDispari(pariDispari){
     }else if(pariDispari.valueOf() == "O"){
         return;
     }else{
-        console.warn("enter a valid character");
+        alert("You must enter a valid character to continue");
         return;
     }   
 }
 function checkNumber(number){
     if(number<1 || number>5){
         console.warn("enter a number in the 1 to 5 range");
+        return;
+    }else if(isNaN(number)){
+        alert("You must enter a number to continue");
+        return;
+    }else{
         return;
     }
 }
